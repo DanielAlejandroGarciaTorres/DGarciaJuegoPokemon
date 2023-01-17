@@ -8,6 +8,6 @@
 import Foundation
 
 struct PokemonModel {
-    let named : String
+    let name : String
     let imageUrl : String
 }

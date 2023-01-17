@@ -23,6 +23,10 @@
 		EFB6DE3E29721CD4009279E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB6DE3D29721CD4009279E1 /* Assets.xcassets */; };
 		EFB6DE4129721CD4009279E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB6DE3F29721CD4009279E1 /* LaunchScreen.storyboard */; };
 		EFB6DE4A29722D4C009279E1 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6DE4929722D4C009279E1 /* QuestionViewController.swift */; };
+		EFCC1C2C29770DB700CA2E6C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC1C2B29770DB700CA2E6C /* Result.swift */; };
+		EFCC1C542977563F00CA2E6C /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC1C532977563F00CA2E6C /* ImageManager.swift */; };
+		EFCC1C5629775AD800CA2E6C /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC1C5529775AD800CA2E6C /* GameModel.swift */; };
+		EFCC1C5829775B2500CA2E6C /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC1C5729775B2500CA2E6C /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		EFB6DE4029721CD4009279E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFB6DE4229721CD4009279E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFB6DE4929722D4C009279E1 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		EFCC1C2B29770DB700CA2E6C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		EFCC1C532977563F00CA2E6C /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		EFCC1C5529775AD800CA2E6C /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		EFCC1C5729775B2500CA2E6C /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,8 @@
 			children = (
 				EF202FC22975CCA4004F4444 /* GIFImage.swift */,
 				EF202FC82975D7B4004F4444 /* PokemonManager.swift */,
+				EFCC1C532977563F00CA2E6C /* ImageManager.swift */,
+				EFCC1C5729775B2500CA2E6C /* GameViewModel.swift */,
 			);
 			path = "ViewModel ";
 			sourceTree = "<group>";
@@ -73,6 +83,8 @@
 				EF202FCC2975D7FA004F4444 /* PokemonModel.swift */,
 				EF202FCE2975D817004F4444 /* ImageData.swift */,
 				EF202FD02975D825004F4444 /* ImageModel.swift */,
+				EFCC1C2B29770DB700CA2E6C /* Result.swift */,
+				EFCC1C5529775AD800CA2E6C /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,13 +214,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF202FD12975D825004F4444 /* ImageModel.swift in Sources */,
+				EFCC1C2C29770DB700CA2E6C /* Result.swift in Sources */,
 				EF202FC32975CCA4004F4444 /* GIFImage.swift in Sources */,
 				EF202FC92975D7B4004F4444 /* PokemonManager.swift in Sources */,
+				EFCC1C5829775B2500CA2E6C /* GameViewModel.swift in Sources */,
 				EFB6DE3C29721CD2009279E1 /* DGarciaJuegoPokemon.xcdatamodeld in Sources */,
+				EFCC1C5629775AD800CA2E6C /* GameModel.swift in Sources */,
 				EF202FD3297606F9004F4444 /* MenuController.swift in Sources */,
 				EF202FCF2975D817004F4444 /* ImageData.swift in Sources */,
 				EFB6DE4A29722D4C009279E1 /* QuestionViewController.swift in Sources */,
 				EFB6DE3629721CD2009279E1 /* ViewController.swift in Sources */,
+				EFCC1C542977563F00CA2E6C /* ImageManager.swift in Sources */,
 				EFB6DE3229721CD2009279E1 /* AppDelegate.swift in Sources */,
 				EFB6DE3429721CD2009279E1 /* SceneDelegate.swift in Sources */,
 				EF202FCD2975D7FA004F4444 /* PokemonModel.swift in Sources */,
