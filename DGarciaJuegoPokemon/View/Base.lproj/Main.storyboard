@@ -374,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="-1543" y="-470"/>
         </scene>
-        <!--View Controller-->
+        <!--Scores Controller-->
         <scene sceneID="tUs-eE-eH8">
             <objects>
-                <viewController id="4lY-0a-doR" sceneMemberID="viewController">
+                <viewController id="4lY-0a-doR" customClass="ScoresController" customModule="DGarciaJuegoPokemon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lzj-eQ-ttd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -413,7 +413,12 @@
                             <constraint firstItem="eQH-D0-tpa" firstAttribute="leading" secondItem="dsY-iL-4J5" secondAttribute="leading" constant="15" id="xPK-e8-2ht"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" style="editor" id="5gl-bw-NVD"/>
+                    <navigationItem key="navigationItem" style="editor" id="5gl-bw-NVD">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrowshape.backward.fill" catalog="system" style="plain" id="b6r-sX-134"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scoreTable" destination="eQH-D0-tpa" id="Dpf-u2-w0b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUC-PU-dme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -422,6 +427,7 @@
     </scenes>
     <resources>
         <image name="Pikachu" width="300" height="271"/>
+        <image name="arrowshape.backward.fill" catalog="system" width="128" height="104"/>
         <image name="mainBackground" width="1080" height="1920"/>
         <image name="pokemon-logo" width="940" height="400"/>
         <image name="pokemon?" width="512" height="512"/>

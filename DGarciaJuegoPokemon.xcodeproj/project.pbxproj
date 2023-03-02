@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		E63CCD404F0B6E51E3C9178B /* Pods_DGarciaJuegoPokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CE61BBD537E4AE2203817C /* Pods_DGarciaJuegoPokemon.framework */; };
+		EF04BC9429B11B410002DA55 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF04BC9229B11B410002DA55 /* UserTableViewCell.xib */; };
+		EF04BC9629B11B690002DA55 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04BC9529B11B690002DA55 /* UserTableViewCell.swift */; };
+		EF04BC9C29B13BE10002DA55 /* UserScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04BC9B29B13BE10002DA55 /* UserScore.swift */; };
+		EF04BC9E29B147B40002DA55 /* ScoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04BC9D29B147B40002DA55 /* ScoresController.swift */; };
 		EF0A842A299DA42F00183AF6 /* ScoreCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A8429299DA42F00183AF6 /* ScoreCoreData.swift */; };
 		EF0A842C299DADAB00183AF6 /* UserGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A842B299DADAB00183AF6 /* UserGame.swift */; };
 		EF202FC32975CCA4004F4444 /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202FC22975CCA4004F4444 /* GIFImage.swift */; };
@@ -36,6 +40,10 @@
 		0E0E2F5FB0A1CA3FF31B6590 /* Pods-DGarciaJuegoPokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGarciaJuegoPokemon.debug.xcconfig"; path = "Target Support Files/Pods-DGarciaJuegoPokemon/Pods-DGarciaJuegoPokemon.debug.xcconfig"; sourceTree = "<group>"; };
 		B9DC91772C2B61B5A4DC5C52 /* Pods-DGarciaJuegoPokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGarciaJuegoPokemon.release.xcconfig"; path = "Target Support Files/Pods-DGarciaJuegoPokemon/Pods-DGarciaJuegoPokemon.release.xcconfig"; sourceTree = "<group>"; };
 		E0CE61BBD537E4AE2203817C /* Pods_DGarciaJuegoPokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGarciaJuegoPokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF04BC9229B11B410002DA55 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		EF04BC9529B11B690002DA55 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		EF04BC9B29B13BE10002DA55 /* UserScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScore.swift; sourceTree = "<group>"; };
+		EF04BC9D29B147B40002DA55 /* ScoresController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresController.swift; sourceTree = "<group>"; };
 		EF0A8429299DA42F00183AF6 /* ScoreCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCoreData.swift; sourceTree = "<group>"; };
 		EF0A842B299DADAB00183AF6 /* UserGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGame.swift; sourceTree = "<group>"; };
 		EF202FC22975CCA4004F4444 /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
@@ -113,6 +121,7 @@
 				EF202FD02975D825004F4444 /* ImageModel.swift */,
 				EFCC1C2B29770DB700CA2E6C /* Result.swift */,
 				EFCC1C5529775AD800CA2E6C /* GameModel.swift */,
+				EF04BC9B29B13BE10002DA55 /* UserScore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +167,8 @@
 				EFB6DE4929722D4C009279E1 /* QuestionViewController.swift */,
 				EF202FD2297606F9004F4444 /* MenuController.swift */,
 				EFDBB7BC299C4DF1000E31F1 /* ResultController.swift */,
+				EF04BC9529B11B690002DA55 /* UserTableViewCell.swift */,
+				EF04BC9D29B147B40002DA55 /* ScoresController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 			children = (
 				EFB6DE3729721CD2009279E1 /* Main.storyboard */,
 				EFB6DE3F29721CD4009279E1 /* LaunchScreen.storyboard */,
+				EF04BC9229B11B410002DA55 /* UserTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,6 +247,7 @@
 				EFB6DE4129721CD4009279E1 /* LaunchScreen.storyboard in Resources */,
 				EFB6DE3E29721CD4009279E1 /* Assets.xcassets in Resources */,
 				EFB6DE3929721CD2009279E1 /* Main.storyboard in Resources */,
+				EF04BC9429B11B410002DA55 /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF202FD12975D825004F4444 /* ImageModel.swift in Sources */,
+				EF04BC9C29B13BE10002DA55 /* UserScore.swift in Sources */,
 				EFCC1C2C29770DB700CA2E6C /* Result.swift in Sources */,
 				EF202FC32975CCA4004F4444 /* GIFImage.swift in Sources */,
+				EF04BC9E29B147B40002DA55 /* ScoresController.swift in Sources */,
 				EF202FC92975D7B4004F4444 /* PokemonManager.swift in Sources */,
 				EFDBB7BD299C4DF1000E31F1 /* ResultController.swift in Sources */,
 				EFCC1C5829775B2500CA2E6C /* GameViewModel.swift in Sources */,
@@ -299,6 +314,7 @@
 				EF202FD3297606F9004F4444 /* MenuController.swift in Sources */,
 				EF202FCF2975D817004F4444 /* ImageData.swift in Sources */,
 				EFB6DE4A29722D4C009279E1 /* QuestionViewController.swift in Sources */,
+				EF04BC9629B11B690002DA55 /* UserTableViewCell.swift in Sources */,
 				EF0A842A299DA42F00183AF6 /* ScoreCoreData.swift in Sources */,
 				EFCC1C542977563F00CA2E6C /* ImageManager.swift in Sources */,
 				EFB6DE3229721CD2009279E1 /* AppDelegate.swift in Sources */,

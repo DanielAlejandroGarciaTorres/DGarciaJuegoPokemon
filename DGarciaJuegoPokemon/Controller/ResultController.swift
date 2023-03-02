@@ -21,6 +21,14 @@ class ResultController: UIViewController {
     var correctString : String? = nil
     var correctAnswer : String? = nil
     
+    override func viewWillAppear(_ animated: Bool) {
+        let result = ScoreCoreData().AddScore(userName: userName ?? "Usurio X", score: score!)
+        
+        if result {
+            print("Se registro el usuario correctamente.")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
