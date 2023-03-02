@@ -19,6 +19,7 @@ class QuestionViewController: UIViewController {
     lazy var pokemonManager = PokemonManager()
     lazy var imageManager = ImageManager()
     lazy var gameViewModel = GameViewModel()
+    lazy var userName : String = ""
     
     var pokemons : [PokemonModel] = []
     var randomButtonPokemon : [PokemonModel] = [] {
@@ -27,7 +28,7 @@ class QuestionViewController: UIViewController {
         }
     }
     var correctAnswer : String = ""
-    var corrctAnserImage : String = ""
+    var correctAnwserImage : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,11 +54,12 @@ class QuestionViewController: UIViewController {
         imageManager.fetchImagePokemon(imageUrl: imageData) {pokemonImage in
 //            print(self.correctAnswer)
 //            print((pokemonImage.Object as! ImageModel).imageURL)
-            self.corrctAnserImage = (pokemonImage.Object as! ImageModel).imageURL
-            
+            self.correctAnwserImage = (pokemonImage.Object as! ImageModel).imageURL
+
             DispatchQueue.main.async {
-                let url = URL(string: self.corrctAnserImage)
-                self.PokemonImage.image = UIImage(
+                let url = URL(string: self.correctAnwserImage)
+                let blackImage = ColorControlsProcessor(brightness: -1, contrast: 1, saturation: 1, inputEV: 0)
+                self.PokemonImage.kf.setImage(with: url, options: [.processor(blackImage)])
             }
             
         }
@@ -71,7 +73,61 @@ class QuestionViewController: UIViewController {
             ScoreLabel.text = "Puntaje: \(gameViewModel.GetScore())"
             sender.layer.borderWidth = 4
             sender.layer.borderColor = UIColor.systemGreen.cgColor
+            print(correctAnwserImage)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                let url  = URL(string : self.correctAnwserImage)
+                self.PokemonImage.kf.setImage(with: url)
+            }
+        
+            
+            Timer.scheduledTimer(withTimeInterval: 0.8, repeats: false){ timer in
+                self.didUpdatePokemon()
+                self.LabelMessage.text = " "
+                sender.layer.borderWidth = 0
+            }
+            
+        } else {
+            LabelMessage.text = "No, no es un \(correctAnswer.capitalized)"
+            sender.layer.borderWidth = 4
+            sender.layer.borderColor = UIColor.systemRed.cgColor
+            
+            let alert = UIAlertController(title: "Perdiste", message: "Ingresa tu User name", preferredStyle: .alert)
+            
+            alert.addTextField { textfield in
+                textfield.placeholder = "Nombre de usuario"
+            }
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+                let textfield = alert?.textFields![0]
+                self.userName = textfield!.text!
+                
+                self.performSegue(withIdentifier: "goToResults", sender: self)
+                sender.layer.borderWidth = 0
+            }))
+                                          
+            self.present(alert, animated: true, completion: nil)
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResults" {
+            let resultController = segue.destination as! ResultController
+            resultController.userName = self.userName
+            resultController.score = gameViewModel.GetScore()
+            resultController.correctString = self.correctAnwserImage
+            resultController.correctAnswer = self.correctAnswer
+            
+            self.resetGame()
+
+        }
+    }
+   
+    func resetGame() {
+        self.didUpdatePokemon()
+        gameViewModel.SetScore(score: 0)
+        ScoreLabel.text = "Puntaje: \(gameViewModel.GetScore())"
+        LabelMessage.text = " "
+        
     }
     
     func SetButtonTitle() {

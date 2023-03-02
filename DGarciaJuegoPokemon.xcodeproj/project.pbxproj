@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E63CCD404F0B6E51E3C9178B /* Pods_DGarciaJuegoPokemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CE61BBD537E4AE2203817C /* Pods_DGarciaJuegoPokemon.framework */; };
+		EF0A842A299DA42F00183AF6 /* ScoreCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A8429299DA42F00183AF6 /* ScoreCoreData.swift */; };
+		EF0A842C299DADAB00183AF6 /* UserGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0A842B299DADAB00183AF6 /* UserGame.swift */; };
 		EF202FC32975CCA4004F4444 /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202FC22975CCA4004F4444 /* GIFImage.swift */; };
 		EF202FC52975CCDE004F4444 /* pokeball-pokemon.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF202FC42975CCDE004F4444 /* pokeball-pokemon.gif */; };
 		EF202FC92975D7B4004F4444 /* PokemonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202FC82975D7B4004F4444 /* PokemonManager.swift */; };
@@ -17,7 +20,6 @@
 		EF202FD3297606F9004F4444 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF202FD2297606F9004F4444 /* MenuController.swift */; };
 		EFB6DE3229721CD2009279E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6DE3129721CD2009279E1 /* AppDelegate.swift */; };
 		EFB6DE3429721CD2009279E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6DE3329721CD2009279E1 /* SceneDelegate.swift */; };
-		EFB6DE3629721CD2009279E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB6DE3529721CD2009279E1 /* ViewController.swift */; };
 		EFB6DE3929721CD2009279E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB6DE3729721CD2009279E1 /* Main.storyboard */; };
 		EFB6DE3C29721CD2009279E1 /* DGarciaJuegoPokemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFB6DE3A29721CD2009279E1 /* DGarciaJuegoPokemon.xcdatamodeld */; };
 		EFB6DE3E29721CD4009279E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB6DE3D29721CD4009279E1 /* Assets.xcassets */; };
@@ -27,9 +29,15 @@
 		EFCC1C542977563F00CA2E6C /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC1C532977563F00CA2E6C /* ImageManager.swift */; };
 		EFCC1C5629775AD800CA2E6C /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC1C5529775AD800CA2E6C /* GameModel.swift */; };
 		EFCC1C5829775B2500CA2E6C /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC1C5729775B2500CA2E6C /* GameViewModel.swift */; };
+		EFDBB7BD299C4DF1000E31F1 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBB7BC299C4DF1000E31F1 /* ResultController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E0E2F5FB0A1CA3FF31B6590 /* Pods-DGarciaJuegoPokemon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGarciaJuegoPokemon.debug.xcconfig"; path = "Target Support Files/Pods-DGarciaJuegoPokemon/Pods-DGarciaJuegoPokemon.debug.xcconfig"; sourceTree = "<group>"; };
+		B9DC91772C2B61B5A4DC5C52 /* Pods-DGarciaJuegoPokemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGarciaJuegoPokemon.release.xcconfig"; path = "Target Support Files/Pods-DGarciaJuegoPokemon/Pods-DGarciaJuegoPokemon.release.xcconfig"; sourceTree = "<group>"; };
+		E0CE61BBD537E4AE2203817C /* Pods_DGarciaJuegoPokemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGarciaJuegoPokemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0A8429299DA42F00183AF6 /* ScoreCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCoreData.swift; sourceTree = "<group>"; };
+		EF0A842B299DADAB00183AF6 /* UserGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGame.swift; sourceTree = "<group>"; };
 		EF202FC22975CCA4004F4444 /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
 		EF202FC42975CCDE004F4444 /* pokeball-pokemon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "pokeball-pokemon.gif"; path = "../../../../Downloads/pokeball-pokemon.gif"; sourceTree = "<group>"; };
 		EF202FC82975D7B4004F4444 /* PokemonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonManager.swift; sourceTree = "<group>"; };
@@ -41,7 +49,6 @@
 		EFB6DE2E29721CD2009279E1 /* DGarciaJuegoPokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGarciaJuegoPokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB6DE3129721CD2009279E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB6DE3329721CD2009279E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EFB6DE3529721CD2009279E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EFB6DE3829721CD2009279E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFB6DE3B29721CD2009279E1 /* DGarciaJuegoPokemon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DGarciaJuegoPokemon.xcdatamodel; sourceTree = "<group>"; };
 		EFB6DE3D29721CD4009279E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 		EFCC1C532977563F00CA2E6C /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		EFCC1C5529775AD800CA2E6C /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		EFCC1C5729775B2500CA2E6C /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		EFDBB7BC299C4DF1000E31F1 /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63CCD404F0B6E51E3C9178B /* Pods_DGarciaJuegoPokemon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3362D88A8504A566293BD500 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E0E2F5FB0A1CA3FF31B6590 /* Pods-DGarciaJuegoPokemon.debug.xcconfig */,
+				B9DC91772C2B61B5A4DC5C52 /* Pods-DGarciaJuegoPokemon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B351185C6823F6F5EE6D59BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0CE61BBD537E4AE2203817C /* Pods_DGarciaJuegoPokemon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF202FC02975CC1C004F4444 /* ViewModel  */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +98,8 @@
 				EF202FC82975D7B4004F4444 /* PokemonManager.swift */,
 				EFCC1C532977563F00CA2E6C /* ImageManager.swift */,
 				EFCC1C5729775B2500CA2E6C /* GameViewModel.swift */,
+				EF0A8429299DA42F00183AF6 /* ScoreCoreData.swift */,
+				EF0A842B299DADAB00183AF6 /* UserGame.swift */,
 			);
 			path = "ViewModel ";
 			sourceTree = "<group>";
@@ -94,6 +122,8 @@
 			children = (
 				EFB6DE3029721CD2009279E1 /* DGarciaJuegoPokemon */,
 				EFB6DE2F29721CD2009279E1 /* Products */,
+				3362D88A8504A566293BD500 /* Pods */,
+				B351185C6823F6F5EE6D59BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,7 +144,6 @@
 				EFB6DE4829722D27009279E1 /* Controller */,
 				EFB6DE3129721CD2009279E1 /* AppDelegate.swift */,
 				EFB6DE3329721CD2009279E1 /* SceneDelegate.swift */,
-				EFB6DE3529721CD2009279E1 /* ViewController.swift */,
 				EFB6DE3D29721CD4009279E1 /* Assets.xcassets */,
 				EF202FC42975CCDE004F4444 /* pokeball-pokemon.gif */,
 				EFB6DE4229721CD4009279E1 /* Info.plist */,
@@ -128,6 +157,7 @@
 			children = (
 				EFB6DE4929722D4C009279E1 /* QuestionViewController.swift */,
 				EF202FD2297606F9004F4444 /* MenuController.swift */,
+				EFDBB7BC299C4DF1000E31F1 /* ResultController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFB6DE4529721CD4009279E1 /* Build configuration list for PBXNativeTarget "DGarciaJuegoPokemon" */;
 			buildPhases = (
+				6D34A4D5829460F862E99C19 /* [CP] Check Pods Manifest.lock */,
 				EFB6DE2A29721CD2009279E1 /* Sources */,
 				EFB6DE2B29721CD2009279E1 /* Frameworks */,
 				EFB6DE2C29721CD2009279E1 /* Resources */,
+				5B8AC78A6684A3291EE41D24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +240,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B8AC78A6684A3291EE41D24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DGarciaJuegoPokemon/Pods-DGarciaJuegoPokemon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DGarciaJuegoPokemon/Pods-DGarciaJuegoPokemon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DGarciaJuegoPokemon/Pods-DGarciaJuegoPokemon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D34A4D5829460F862E99C19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DGarciaJuegoPokemon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFB6DE2A29721CD2009279E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -217,13 +291,15 @@
 				EFCC1C2C29770DB700CA2E6C /* Result.swift in Sources */,
 				EF202FC32975CCA4004F4444 /* GIFImage.swift in Sources */,
 				EF202FC92975D7B4004F4444 /* PokemonManager.swift in Sources */,
+				EFDBB7BD299C4DF1000E31F1 /* ResultController.swift in Sources */,
 				EFCC1C5829775B2500CA2E6C /* GameViewModel.swift in Sources */,
 				EFB6DE3C29721CD2009279E1 /* DGarciaJuegoPokemon.xcdatamodeld in Sources */,
 				EFCC1C5629775AD800CA2E6C /* GameModel.swift in Sources */,
+				EF0A842C299DADAB00183AF6 /* UserGame.swift in Sources */,
 				EF202FD3297606F9004F4444 /* MenuController.swift in Sources */,
 				EF202FCF2975D817004F4444 /* ImageData.swift in Sources */,
 				EFB6DE4A29722D4C009279E1 /* QuestionViewController.swift in Sources */,
-				EFB6DE3629721CD2009279E1 /* ViewController.swift in Sources */,
+				EF0A842A299DA42F00183AF6 /* ScoreCoreData.swift in Sources */,
 				EFCC1C542977563F00CA2E6C /* ImageManager.swift in Sources */,
 				EFB6DE3229721CD2009279E1 /* AppDelegate.swift in Sources */,
 				EFB6DE3429721CD2009279E1 /* SceneDelegate.swift in Sources */,
@@ -370,6 +446,7 @@
 		};
 		EFB6DE4629721CD4009279E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0E2F5FB0A1CA3FF31B6590 /* Pods-DGarciaJuegoPokemon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -400,6 +477,7 @@
 		};
 		EFB6DE4729721CD4009279E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9DC91772C2B61B5A4DC5C52 /* Pods-DGarciaJuegoPokemon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
